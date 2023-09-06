@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image: url(hd-wallpaper-g20d7dfd41_1920.jpg);
+                background-repeat:no-repeat;
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container
+            {
+                width: 610px;
+                height: 340px;
+                background-color:red;
+                border-radius: 10px;
+                box-shadow: rgba(50,50,93,0.25) 0px 50px
+                100px -20px, rgba(0,0,0,0.3) 0px 30px 60px
+                -30px, rgba(10,37,64,0.35) 0px -2px 6px 0px inset;
+            }
+            button:hover
+            {
+                color: rgb(231, 229, 229);
+                cursor: pointer;
+            }
+             .header
+             {
+                height: 50px;
+                text-align: center;
+                padding-top: 12px;
+                width: 100%;
+                font-size: 35px;
+                line-height: 22px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                margin-top: 10px;
+                color: white;
+                background-color: red;                    
+             }
+            .main-body
+            {
+                height: 200px;
+                width: 100%;
+                background-color: white;
+                position: relative;
+            }
+            input
+            {
+                height: 40px;
+                width: 230px;
+                margin-inline: 15px;
+                color: rgb(41, 39, 39);
+                border: solid 1px;
+                border-color: #aaa;
+                border-radius: 10px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .plus
+            {
+                margin-left: 30px;
+                color: red;
+                margin-right: 0px;
+                margin-right: 20px;
+                font-size: 30px;
+                position: relative;
+                display: inline;
+                margin-top: 20px;
+            }
+            button
+            {
+                height: 30px;
+                width: 240px;
+                border-radius: 7px;
+                color: white;
+                font-size: 20px;
+                translate: calc(75%);
+                position: absolute;
+                border: solid 1px #6ed96a;
+                background-color: rgb(26, 218, 26);
+            }
+            #lovepercent
+            {
+                height: 40px;
+                width: 300px;
+                margin-top: 50px;
+                margin-left: 145px;
+                position: relative;                
+                color: rgb(123, 109, 109);
+                font-size: 17px;
+                font-weight: bold;
+                left: 0;
+            }
+            .footer
+            {
+                height: 50px;
+                color: white;
+                font-size: 30px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 1px;
+                background-position-x: left;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            @media(max-width:650px){
+                .button-div{
+                    height: 50px;
+                    width: 100%;
+                }
+                .container{
+                    width: 90%;
+                    height: 300px;
+                    position: relative;
+                    margin-inline: 10px;
+                }
+                .header{
+                    height: 40px;
+                    text-align: center;
+                    padding-top: 12px;
+                    width: 100%;
+                    font-size: 30px;
+                    line-height: 22px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    color: white;
+                    background-color: red;                    
+                }
+                .main-body{
+                    height: 170px;
+                    width: 100%;
+                    background-color: white;
+                    position: relative;
+                }
+                input{
+                    height: 35px;
+                    width: 35%;
+                    color: rgb(41, 39, 39);
+                    border: solid 1px;
+                    border-color: #aaa;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                .plus{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: red;
+                    font-size: 30px;
+                    position: relative;
+                    display: inline;
+                    /* margin-top: 20px; */
+                }      
+                button{
+                    height: 30px;
+                    width: 40%;
+                    border-radius: 7px;
+                    color: white;
+                    font-size: 20px;
+                    translate: calc(50%,-50);
+                    border: solid 1px #6ed96a;
+                    position: relative;
+                    background-color: rgb(26, 218, 26);    
+                }
+                #lovepercent{
+                    height: 35px;
+                    width: 50vw;
+                    margin-top: -5px;
+                    translate: calc(50% - 10%);
+                    position: relative;                
+                    color: rgb(123, 109, 109);
+                    font-size: 3vw;
+                    font-weight: bold;
+                    padding: 0 5px;
+                    margin-left: 0;
+                }          
+                .footer{
+                    height: 35px;
+                    color: white;
+                    font-size: 30px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    letter-spacing: 1px;
+                    background-position-x: left;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width:450px){
+                .container{
+                    position: relative;
+                    width: 100%;
+                }
+                #lovepercent{
+                    font-size: 4.5vw;
+                }
+                .header{
+                    font-size: 7.4vw;
+                    height: 30px;
+                    border-radius: 10px;
+                    margin-top: -5px;
+                    margin-bottom: 5px;
+                }
+                .plus{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                input{
+                    height: 30px;
+                    width: 28vw;
+                }
+            }
+
+            @media screen and (max-width:300px){
+                .container{
+                    height: 280px;
+                    position: relative;
+                    left: -8px;
+                }
+                #lovepercent{
+                    position: relative;
+                    left: -23%;
+                    font-size: 5vw;
+                    width: 80%;
+                }
+                .footer{
+                    font-size: 7.2vw;
+                    padding: 0 7px;
+                }
+            }
+
+        </style>
+        <script type="text/javascript">
+            function calculate()
+            {
+                var name = document.getElementById("yourname").value;
+                var lname = document.getElementById("lovename").value;
+                if(name == "")
+                {
+                    alert("Please Enter Your Name ");
+                }
+                else if(name.length<=3)
+                {
+                    alert("Minimum Length Of The Name Must Be 3");
+                }
+                else if(!isNaN(name))
+                {
+                    alert("Please Enter Valid Name");
+                }
+                else if(lname == "")
+                {
+                    alert("Please Enter Love Name ");
+                }
+                else if(lname.length<=2)
+                {
+                    alert("Minimum Length Of The Name Must Be 3");
+                }
+                else if(!isNaN(lname))
+                {
+                    alert("Please Enter Valid Name");
+                }
+                else
+                {
+                    let x = Math.random() * 100;
+                    if(x <= 30)
+                    {
+                        x=x+10;
+                        // x = (Math.random() * 30) + 20;
+                        document.getElementById("lovepercent").value = Math.floor(x) + " %, 💌 Take Care ";
+                    }
+                    else if(x <= 50)
+                    {
+                        document.getElementById("lovepercent").value = Math.floor(x) + " %, 👍 It's Good !";
+                    }
+                    else if(x <= 75)
+                    {
+                        document.getElementById("lovepercent").value = Math.floor(x) + " %, 😍 It's Nice !";
+                    }
+                    else if(x <= 95)
+                    {
+                        document.getElementById("lovepercent").value = "  Wow! 🥰 " + Math.floor(x) + " %,  God Bless You!";
+                    }
+                    else
+                    {
+                        document.getElementById("lovepercent").value = "Excellent! 💝 It's " + Math.floor(x) + "%,  Be Loveful!";
+                    }
+
+                    if((name == 'linesh' || name == 'hemangi' || name == 'Linesh' || name == 'Hemangi') && (lname == 'linesh' || lname == 'hemangi' || lname == 'Hemangi' || lname == 'Linesh'))
+                    {
+                        x = 100;
+                        document.getElementById("lovepercent").value = "It's " + x + "% 💝, Wonderful";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">LOVE CALCULATOR</div>
+            <div class="main-body">
+                <input type="text" placeholder="Your Name" id="yourname" ><span class="plus">❤</span>
+                <input type="text" placeholder="Love Name" id="lovename" ><br><br>
+                <div class="button-div">
+                    <button onclick="calculate()">Calculate</button>
+                </div>
+                <input type="text" placeholder="Love Percentage" id="lovepercent" disabled>
+            </div>
+            <div class="footer">God Bless Your Relationship</div>
+        </div>
+    </body>
+</html>
